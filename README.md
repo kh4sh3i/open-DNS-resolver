@@ -1,5 +1,5 @@
-# open-DNS-resolver
-DNS Open-resolvers are DNS servers responding to recursive queries for arbitrary domain names from anywhere on the Internet.
+# open DNS resolver
+DNS Open resolvers or open DNS resolver are DNS servers responding to recursive queries for arbitrary domain names from anywhere on the Internet.
 
 
 
@@ -18,11 +18,13 @@ $ dig +short jetamooz.com @x.x.x.x
 note : Substitue x.x.x.x with the IP address of the DNS resolver (target).
 
 ### online check
+* [zonecheck](https://zonecheck.org/openres.php)
+* [openresolver](https://openresolver.com/)
 
 ### Solution
-Disable recursion or limit recursion to trusted clients in the DNS server's configuration.
+* Disable recursion or limit recursion to trusted clients in the DNS server's configuration.
 
-BIND: [Secure BIND Template](http://www.cymru.com/Documents/secure-bind-template.html)
+* BIND: [Secure BIND Template](http://www.cymru.com/Documents/secure-bind-template.html)
 ```
 Secure Bind by adding ACLs, and permitting it in named.conf options 
 
@@ -44,6 +46,9 @@ server:
         access-control:2001:ffff:ffff:ffff::/64 allow
         ...
 ```
-Microsoft Windows: Disable Recursion on the DNS Server
+* Microsoft Windows: Disable Recursion on the DNS Server
 
-## resource
+## references
+* [ncsc.gov.ie](https://www.ncsc.gov.ie/emailsfrom/DDoS/DNS/)
+* [cloudflare.com/](https://www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack/)
+* [bsi.bund.de](https://www.bsi.bund.de/EN/Topics/IT-Crisis-Management/CERT-Bund/CERT-Reports/HOWTOs/DNS-Open-Resolver/DNS-Open-Resolver_node.html)
