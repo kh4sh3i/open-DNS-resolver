@@ -17,11 +17,16 @@ $ dig +short jetamooz.com @x.x.x.x
 ```
 note : Substitue x.x.x.x with the IP address of the DNS resolver (target).
 
-### online check
+if you get response then your target is vulnerable.
+if you do not set response or get request time out then target is safe!
+
+
+### online check target
 * [zonecheck](https://zonecheck.org/openres.php)
 * [openresolver](https://openresolver.com/)
 
-### Solution
+
+## Solution
 * Disable recursion or limit recursion to trusted clients in the DNS server's configuration.
 
 * BIND: [Secure BIND Template](http://www.cymru.com/Documents/secure-bind-template.html)
@@ -48,7 +53,7 @@ server:
 ```
 * Microsoft Windows: Disable Recursion on the DNS Server
 
-## references
+### references
 * [ncsc.gov.ie](https://www.ncsc.gov.ie/emailsfrom/DDoS/DNS/)
 * [cloudflare.com/](https://www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack/)
 * [bsi.bund.de](https://www.bsi.bund.de/EN/Topics/IT-Crisis-Management/CERT-Bund/CERT-Reports/HOWTOs/DNS-Open-Resolver/DNS-Open-Resolver_node.html)
