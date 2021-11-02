@@ -1,6 +1,8 @@
 # open DNS resolver
 DNS Open resolvers or open DNS resolver are DNS servers responding to recursive queries for arbitrary domain names from anywhere on the Internet.
 
+### DNS amplification attack
+![This is an image](/ddos.png)
 
 
 ### DNS query types
